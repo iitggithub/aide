@@ -1,0 +1,4 @@
+aide:
+  image: iitgdocker/aide:latest
+  volumes:
+    - /data/aide/aide:/var/lib/aide
