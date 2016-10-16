@@ -12,6 +12,7 @@ if [ -f /var/lib/aide/aide.conf ]
   chmod 600 /var/lib/aide/aide.conf
 fi
 
+# Generate a new database
 if [ ! -f /var/lib/aide/aide.db.gz ]
   then
   echo "Generating a new AIDE database in /var/lib/aide/aide.db.gz..."
