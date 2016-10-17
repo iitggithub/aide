@@ -9,6 +9,6 @@ RUN yum -y --nogpgcheck install \
 # Install the default AIDE configuration
 COPY aide.conf /etc/aide.conf
 
-COPY run.sh /run.sh
-RUN chmod +x /run.sh
-CMD ["/run.sh"]
+COPY aide_init.sh /aide_init.sh
+RUN chmod +x /aide_init.sh
+CMD ["/aide_init.sh"]
